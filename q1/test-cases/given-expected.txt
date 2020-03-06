@@ -1,0 +1,9 @@
+Please enter a line of text:
+I say Hi.
+3	words
+1	a
+1	h
+2	i
+1	s
+1	y
+
