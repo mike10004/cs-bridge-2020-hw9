@@ -6,4 +6,3 @@ I say Hi.
 2	i
 1	s
 1	y
-

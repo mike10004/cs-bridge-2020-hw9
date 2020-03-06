@@ -1,0 +1,17 @@
+Please enter a line of text:
+What if? There is more than one sentence. What do we do?
+12	words
+3	a
+1	c
+2	d
+8	e
+1	f
+4	h
+2	i
+1	m
+4	n
+4	o
+2	r
+2	s
+5	t
+3	w

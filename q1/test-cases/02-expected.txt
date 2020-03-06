@@ -1,0 +1,16 @@
+Please enter a line of text:
+Make sure memory is URGENT.
+5	words
+1	a
+4	e
+1	g
+1	i
+1	k
+3	m
+1	n
+1	o
+3	r
+2	s
+1	t
+2	u
+1	y

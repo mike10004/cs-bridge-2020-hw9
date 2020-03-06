@@ -1,0 +1,20 @@
+Please enter a line of text:
+Come quick--everything is broken?
+5	words
+1	b
+2	c
+4	e
+1	g
+1	h
+3	i
+2	k
+1	m
+2	n
+2	o
+1	q
+2	r
+1	s
+1	t
+1	u
+1	v
+1	y

@@ -1,0 +1,29 @@
+Please enter a line of text:
+The quick, brown fox jumps over the lazy dog!
+9	words
+1	a
+1	b
+1	c
+1	d
+3	e
+1	f
+1	g
+2	h
+1	i
+1	j
+1	k
+1	l
+1	m
+1	n
+4	o
+1	p
+1	q
+2	r
+1	s
+2	t
+2	u
+1	v
+1	w
+1	x
+1	y
+1	z

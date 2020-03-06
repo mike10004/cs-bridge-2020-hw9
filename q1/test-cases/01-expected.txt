@@ -1,0 +1,13 @@
+Please enter a line of text:
+This is so, so crazy.
+5	words
+1	a
+1	c
+1	h
+2	i
+2	o
+1	r
+4	s
+1	t
+1	y
+1	z
