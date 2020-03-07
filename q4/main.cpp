@@ -6,33 +6,6 @@
 
 using namespace std;
 
-const bool verbose = true;
-
-/**
- * Prints an array.
- * @param arr  array
- * @param arrSize array length
- */
-const char* printArray(const int arr[], int arrSize, const char* returnValue){
-    int i;
-    for (i = 0; i < arrSize; i++) {
-        cout<<arr[i]<<' ';
-    }
-    cout.flush();
-    return returnValue;
-}
-
-/**
- * Swaps the values of two variables.
- * @param a reference to one value
- * @param b reference to the other value
- */
-void swap(int& a, int& b) {
-    int tmp = a;
-    a = b;
-    b = tmp;
-}
-
 /**
  * Determines whether a number is even.
  * @param number the number
@@ -102,20 +75,40 @@ bool isArraysEqual(const int array1[], int array1Size, const int array2[], const
     return true;
 }
 
-void testOddsKeepEvensFlip(const int original[], int arrSize, const int expected[]) {
-    int* arr = new int[arrSize];
-    for (int i = 0; i < arrSize; i++) {
-        arr[i] = original[i];
+/**
+ * Prints an array.
+ * @param arr  array
+ * @param arrSize array length
+ */
+const char* printArray(const int arr[], int arrSize, const char* returnValue){
+    int i;
+    for (i = 0; i < arrSize; i++) {
+        cout<<arr[i]<<' ';
     }
-    oddsKeepEvensFlip(arr, arrSize);
-    bool equal = isArraysEqual(arr, arrSize, expected, arrSize);
+    cout.flush();
+    return returnValue;
+}
+
+/**
+ * Tests the oddsKeepEvensFlip function.
+ * @param input input array
+ * @param inputLength input array length
+ * @param expected expected output array
+ */
+void testOddsKeepEvensFlip(const int input[], int inputLength, const int expected[]) {
+    int* actual = new int[inputLength];
+    for (int i = 0; i < inputLength; i++) {
+        actual[i] = input[i];
+    }
+    oddsKeepEvensFlip(actual, inputLength);
+    bool equal = isArraysEqual(actual, inputLength, expected, inputLength);
     if (!equal) {
-        cout << "original: " << printArray(original, arrSize, "\n");
-        cout << "expected: " << printArray(expected, arrSize, "\n");
-        cout << "  actual: " << printArray(arr, arrSize, "\n");
+        cout << "original: " << printArray(input, inputLength, "\n");
+        cout << "expected: " << printArray(expected, inputLength, "\n");
+        cout << "  actual: " << printArray(actual, inputLength, "\n");
         cout << endl;
     }
-    delete[] arr;
+    delete[] actual;
     assert(equal);
 }
 
