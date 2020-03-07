@@ -1,0 +1,24 @@
+{
+  "input": "{one}\n{two}\n",
+  "expected": "Please enter two phrases:\n{one}\n{two}\nThose are{decision} anagrams.\n",
+  "param_names": [
+    "one", "two", "decision"
+  ],
+  "test_cases": [
+    [
+      "Eleven plus two", "Twelve plus one", ""
+    ],
+    [
+      "Three plus four", "Five plus two", " not"
+    ],
+    [
+      "Something, rotten", "Horsemen Totting", ""
+    ],
+    [
+      "   some/trash ", "tr, ash ome-s", ""
+    ],
+    [
+      "   some/trash ", "tr, WHAT~h ome-s", " not"
+    ]
+  ]
+}
