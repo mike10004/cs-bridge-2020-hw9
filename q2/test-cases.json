@@ -19,6 +19,8 @@
     ],
     [
       "   some/trash ", "tr, WHAT~h ome-s", " not"
-    ]
+    ],
+    [ "a", "a", "" ],
+    [ "x", " ", " not" ]
   ]
 }
