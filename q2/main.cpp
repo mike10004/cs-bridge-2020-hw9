@@ -11,7 +11,6 @@ const char ALPHA_MAX = 'z';
 const int ALPHA_SIZE = ALPHA_MAX - ALPHA_MIN + 1;
 const int UPPER_TO_LOWER_OFFSET = 'a' - 'A';
 const int MAX_LINE_LEN = 1024;
-const char DELIM = '\t';
 
 /**
  * Returns the lower case variant of a letter, if it is an upper case
