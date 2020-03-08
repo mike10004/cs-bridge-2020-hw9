@@ -15,6 +15,12 @@ bool isEven(int number) {
     return number % 2 == 0;
 }
 
+/**
+ * Counts the even numbers in an array of integers.
+ * @param arr the array
+ * @param arrSize the array size
+ * @return count of evens in the array
+ */
 int countEvens(const int arr[], int arrSize) {
     int count = 0;
     for (int i = 0; i < arrSize; i++) {
@@ -112,6 +118,10 @@ void testOddsKeepEvensFlip(const int input[], int inputLength, const int expecte
     assert(equal);
 }
 
+/**
+ * Tests the oddsKeepEvensFlip function with a variety of test cases.
+ * @return zero on normal operation; nonzero on assertion failure
+ */
 int main() {
     int empty[] = {};
     int oneEven[] = {4};

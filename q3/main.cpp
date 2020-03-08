@@ -176,7 +176,10 @@ void testGetPosNums4(int input[], int inputSize, int expected[], int expectedSiz
     delete actual;
 }
 
-
+/**
+ * Tests all of the getPosNums functions.
+ * @return zero on normal operation; nonzero on assertion failure
+ */
 int main() {
     int emptyArray[] = {};
     int onePositiveArray[] = {4};
