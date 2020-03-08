@@ -9,11 +9,12 @@ assert len(_ALPHABET) == 26
 assert len(_ALPHABET) == len(set(_ALPHABET))
 
 
-def write_expected(inputline, ofile):
+def write_expected(inputline, num_words_check, ofile):
     print("Please enter a line of text:", file=ofile)
     print(inputline, file=ofile)
     counts = defaultdict(int)
     num_words = len(list(filter(lambda w: w, re.split(r'[^A-Za-z]+', inputline))))
+    assert num_words_check == num_words
     for ch in inputline:
         ch = ch.lower()
         if ch in _ALPHABET:
@@ -26,21 +27,28 @@ def write_expected(inputline, ofile):
 
 def main():
     test_lines = [
-        "This is so, so crazy.",
-        "Make sure memory is URGENT.",
-        "The quick, brown fox jumps over the lazy dog!",
-        "Come quick--everything is broken?",
-        "What if? There is more than one sentence. What do we do?"
+        ("This is so, so crazy.", 5),
+        ("Make sure memory is URGENT.", 5),
+        ("The quick, brown fox jumps over the lazy dog!", 9),
+        ("Come quick--everything is broken?", 5),
+        ("What if? There is more than one sentence. What do we do?", 12),
+        ("  x  * ", 1),
+        ("  Let us see what happens now.  ?./* ", 6),
+        ("degenerate...", 1),
+        ("!@# $%^ &*()", 0),
+        ("This,is,a,sentence,delimited,entirely,by,commas,", 8),
+        
     ]
     output_dir = os.path.join(os.getcwd(), 'test-cases')
-    for case_id, line in enumerate(test_lines):
+    for case_id, linetuple in enumerate(test_lines):
+        line, num_words_check = linetuple
         case_id = f"{case_id + 1:02d}"
         input_pathname = os.path.join(output_dir, f"{case_id}-input.txt")
         with open(input_pathname, 'w') as ofile:
             print(line, file=ofile)
         expected_pathname = os.path.join(output_dir, f"{case_id}-expected.txt")
         with open(expected_pathname, 'w') as ofile:
-            write_expected(line, ofile)
+            write_expected(line, num_words_check, ofile)
     return 0
 
 

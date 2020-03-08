@@ -1,0 +1,4 @@
+Please enter a line of text:
+  x  * 
+1	words
+1	x

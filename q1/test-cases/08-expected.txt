@@ -1,0 +1,10 @@
+Please enter a line of text:
+degenerate...
+1	words
+1	a
+1	d
+4	e
+1	g
+1	n
+1	r
+1	t

@@ -1,0 +1,18 @@
+Please enter a line of text:
+This,is,a,sentence,delimited,entirely,by,commas,
+8	words
+2	a
+1	b
+2	c
+2	d
+7	e
+1	h
+5	i
+2	l
+3	m
+3	n
+1	o
+1	r
+4	s
+4	t
+2	y

@@ -1,0 +1,14 @@
+Please enter a line of text:
+  Let us see what happens now.  ?./* 
+6	words
+2	a
+4	e
+2	h
+1	l
+2	n
+1	o
+2	p
+3	s
+2	t
+1	u
+2	w
