@@ -83,6 +83,15 @@ bool isArraysEqual(const int *array1, int array1Size, const int *array2, const i
     return true;
 }
 
+/**
+ * Prompts the user for two phrases and reports whether they are anagrams.
+ * Performs a sequence of O(n) operations, where n is the sum of the string 
+ * lengths: constructs string objects from input and analyzes letter counts
+ * in each string. Allocating letter histograms and comparing them is 
+ * O(1) because alphabet size is fixed.
+ * 
+ * @return zero on normal operation
+ */
 int main() {
     int letterCounts1[ALPHA_SIZE] = {0};
     int letterCounts2[ALPHA_SIZE] = {0};

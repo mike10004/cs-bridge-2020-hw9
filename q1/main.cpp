@@ -90,6 +90,13 @@ void printAnalysis(int letterCounts[], int numWords) {
     }
 }
 
+/**
+ * Prompts for text and reports word and letter counts.
+ * Performs two O(n) operations, where n is string length: copying
+ * input to a string object and calling analyzeLine to perform 
+ * text analysis.
+ * @return zero on normal operation
+ */
 int main() {
     char inputLine[MAX_LINE_LEN] = "";
     int letterCounts[ALPHA_SIZE] = {0};  // initialize all to zero

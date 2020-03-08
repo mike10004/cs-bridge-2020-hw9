@@ -29,10 +29,10 @@ int countEvens(const int arr[], int arrSize) {
  * Rearranges elements of an array such that all odd values
  * are at positions before all even values. The original ordering
  * of the odd values is preserved, and the ordering of the
- * even values is reversed. The array is traversed once to 
- * push all odds to the front and collect the evens into a buffer,
- * and then the evens buffer is copied back into the end of 
- * the array. Time complexity is O(n).
+ * even values is reversed. The array is traversed once to count
+ * the even numbers and again to push all odds to the front and 
+ * collect the evens into a buffer. The evens buffer is then 
+ * copied into the end of the array. Time complexity is O(n).
  * @param arr array
  * @param arrSize array size
  */
