@@ -37,7 +37,7 @@ def main():
         ("degenerate...", 1),
         ("!@# $%^ &*()", 0),
         ("This,is,a,sentence,delimited,entirely,by,commas,", 8),
-        
+        ("Multiple spaces     between...words", 4),
     ]
     output_dir = os.path.join(os.getcwd(), 'test-cases')
     for case_id, linetuple in enumerate(test_lines):
