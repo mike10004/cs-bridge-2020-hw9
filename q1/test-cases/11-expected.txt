@@ -1,19 +1,4 @@
 Please enter a line of text:
-Multiple spaces     between...words
-4	words
-1	a
-1	b
-1	c
-1	d
-5	e
-1	i
-2	l
-1	m
-1	n
-1	o
-2	p
-1	r
-3	s
-2	t
-1	u
-2	w
+a.a
+2	words
+2	a

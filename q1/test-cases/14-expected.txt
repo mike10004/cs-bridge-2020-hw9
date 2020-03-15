@@ -1,0 +1,16 @@
+Please enter a line of text:
+.The.dog.plays.outside.
+4	words
+1	a
+2	d
+2	e
+1	g
+1	h
+1	i
+1	l
+2	o
+1	p
+2	s
+2	t
+1	u
+1	y
