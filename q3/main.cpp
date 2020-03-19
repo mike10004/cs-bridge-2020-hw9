@@ -84,7 +84,7 @@ void testGetPosNums1(int input[], int inputSize, int expected[], int expectedSiz
     assert(actual != nullptr);
     assert(expectedSize == actualSize);
     assert(isArraysEqual(expected, expectedSize, actual, actualSize));    
-    delete actual;
+    delete[] actual;
 }
 
 /**
@@ -113,7 +113,7 @@ void testGetPosNums2(int input[], int inputSize, int expected[], int expectedSiz
     assert(actual != nullptr);
     assert(expectedSize == actualSize);
     assert(isArraysEqual(expected, expectedSize, actual, actualSize));
-    delete actual;
+    delete[] actual;
 }
 
 /**
@@ -142,7 +142,7 @@ void testGetPosNums3(int input[], int inputSize, int expected[], int expectedSiz
     assert(actual != nullptr);
     assert(expectedSize == actualSize);
     assert(isArraysEqual(expected, expectedSize, actual, actualSize));
-    delete actual;
+    delete[] actual;
 }
 
 
@@ -173,7 +173,7 @@ void testGetPosNums4(int input[], int inputSize, int expected[], int expectedSiz
     assert(actual != nullptr);
     assert(expectedSize == actualSize);
     assert(isArraysEqual(expected, expectedSize, actual, actualSize));
-    delete actual;
+    delete[] actual;
 }
 
 /**
